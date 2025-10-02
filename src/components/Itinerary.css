@@ -1,0 +1,238 @@
+.itinerary {
+  padding: 6rem 2rem;
+  background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+}
+
+.days-selector {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.day-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 1.5rem 1.5rem;
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+.day-btn:hover {
+  border-color: #DC143C;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(220, 20, 60, 0.15);
+}
+
+.day-btn.active {
+  background: linear-gradient(135deg, #DC143C, #8B0000);
+  color: white;
+  border-color: #DC143C;
+  box-shadow: 0 10px 25px rgba(220, 20, 60, 0.3);
+  transform: translateY(-5px);
+}
+
+.day-highlight {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.day-date {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.day-name {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.day-details {
+  background: white;
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+}
+
+.day-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.day-header h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.day-theme {
+  font-size: 1.2rem;
+  color: #DC143C;
+  font-weight: 600;
+}
+
+.activities-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+
+.activities-timeline::before {
+  content: '';
+  position: absolute;
+  left: 100px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, #DC143C, #FFD700);
+}
+
+.activity-item {
+  display: flex;
+  gap: 2rem;
+  position: relative;
+}
+
+.activity-time {
+  min-width: 100px;
+  text-align: right;
+}
+
+.activity-time span {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #50C878, #2E8B57);
+  color: white;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.activity-content {
+  display: flex;
+  gap: 1.5rem;
+  flex: 1;
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 15px;
+  border-left: 4px solid #DC143C;
+  position: relative;
+}
+
+.activity-content::before {
+  content: '';
+  position: absolute;
+  left: -2.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  background: #FFD700;
+  border: 3px solid #DC143C;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.activity-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.activity-details h4 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.activity-details p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.itinerary-footer {
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.itinerary-footer p {
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .itinerary {
+    padding: 4rem 1.5rem;
+  }
+
+  .days-selector {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .day-btn {
+    min-width: 100px;
+    padding: 1rem;
+  }
+
+  .day-details {
+    padding: 2rem 1.5rem;
+  }
+
+  .day-header h3 {
+    font-size: 1.5rem;
+  }
+
+  .day-theme {
+    font-size: 1rem;
+  }
+
+  .activities-timeline::before {
+    left: 0;
+  }
+
+  .activity-item {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .activity-time {
+    text-align: left;
+  }
+
+  .activity-content::before {
+    left: -1.5rem;
+  }
+
+  .activity-content {
+    margin-left: 1rem;
+  }
+
+  .itinerary-footer {
+    padding: 1.5rem;
+  }
+
+  .itinerary-footer p {
+    font-size: 0.95rem;
+  }
+}

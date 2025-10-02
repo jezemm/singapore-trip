@@ -1,0 +1,176 @@
+.travel-tips {
+  padding: 6rem 2rem;
+  background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.tip-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.tip-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(80, 200, 120, 0.2);
+  border-color: #50C878;
+}
+
+.tip-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.tip-icon {
+  font-size: 2.5rem;
+}
+
+.tip-header h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.tip-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tip-list li {
+  padding: 0.8rem 0;
+  padding-left: 1.8rem;
+  position: relative;
+  color: #555;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.tip-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #50C878;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.emergency-info {
+  background: linear-gradient(135deg, #DC143C, #8B0000);
+  color: white;
+  padding: 3rem;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.emergency-info h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.emergency-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.emergency-item {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 1.1rem;
+}
+
+.emergency-item strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.useful-apps {
+  background: linear-gradient(135deg, #50C878, #2E8B57);
+  color: white;
+  padding: 3rem;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.useful-apps h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.apps-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.app-tag {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.app-tag:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .travel-tips {
+    padding: 4rem 1.5rem;
+  }
+
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .emergency-info,
+  .useful-apps {
+    padding: 2rem 1.5rem;
+  }
+
+  .emergency-info h3,
+  .useful-apps h3 {
+    font-size: 1.5rem;
+  }
+
+  .emergency-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .apps-list {
+    flex-direction: column;
+  }
+
+  .app-tag {
+    width: 100%;
+    text-align: center;
+  }
+}
