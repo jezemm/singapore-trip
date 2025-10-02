@@ -122,12 +122,42 @@ const TravelTips: React.FC = () => {
         <div className="useful-apps">
           <h3>📱 Useful Apps to Download</h3>
           <div className="apps-list">
-            <span className="app-tag">Grab (Transport)</span>
-            <span className="app-tag">Google Maps</span>
-            <span className="app-tag">Singapore MRT Map</span>
-            <span className="app-tag">F1 Official App</span>
-            <span className="app-tag">WhatsApp (Communication)</span>
-            <span className="app-tag">XE Currency Converter</span>
+            <button
+              className="app-tag"
+              onClick={() => window.open('https://www.grab.com/sg/download/', '_blank')}
+            >
+              Grab (Transport)
+            </button>
+            <button
+              className="app-tag"
+              onClick={() => window.open('https://www.google.com/maps', '_blank')}
+            >
+              Google Maps
+            </button>
+            <button
+              className="app-tag"
+              onClick={() => window.open('https://www.smrt.com.sg/Journey-with-Us/Mobile-Application', '_blank')}
+            >
+              Singapore MRT Map
+            </button>
+            <button
+              className="app-tag"
+              onClick={() => window.open('https://www.formula1.com/en/latest/article.the-official-f1-app-your-mobile-guide-to-f1.5VASRjQW9yO0se8CAkieO2.html', '_blank')}
+            >
+              F1 Official App
+            </button>
+            <button
+              className="app-tag"
+              onClick={() => window.open('https://www.whatsapp.com/download', '_blank')}
+            >
+              WhatsApp (Communication)
+            </button>
+            <button
+              className="app-tag"
+              onClick={() => window.open('https://www.xe.com/apps/', '_blank')}
+            >
+              XE Currency Converter
+            </button>
           </div>
         </div>
       </div>
