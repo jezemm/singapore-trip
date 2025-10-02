@@ -165,7 +165,7 @@ const Food: React.FC = () => {
               <p>Grilled skewered meat (chicken, beef, or mutton) marinated in turmeric and spices, served with peanut sauce, cucumber, and onions.</p>
             </div>
             <div className="dish-card">
-              <div className="dish-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1525351326368-efbb5cb6814d?q=80&w=600')" }}></div>
+              <div className="dish-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?q=80&w=600')" }}></div>
               <h4>☕ Kaya Toast</h4>
               <p>Traditional breakfast of crispy toast with sweet coconut egg jam (kaya) and butter, served with soft-boiled eggs and strong local coffee (kopi).</p>
             </div>
