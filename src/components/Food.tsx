@@ -144,12 +144,36 @@ const Food: React.FC = () => {
         <div className="must-try">
           <h3>Must-Try Dishes</h3>
           <div className="dishes-grid">
-            <div className="dish-item">🍗 Hainanese Chicken Rice</div>
-            <div className="dish-item">🦀 Chili Crab</div>
-            <div className="dish-item">🍜 Laksa</div>
-            <div className="dish-item">🍢 Satay</div>
-            <div className="dish-item">☕ Kaya Toast</div>
-            <div className="dish-item">🍝 Hokkien Mee</div>
+            <div className="dish-card">
+              <div className="dish-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=600')" }}></div>
+              <h4>🍗 Hainanese Chicken Rice</h4>
+              <p>Singapore's national dish featuring tender poached chicken, fragrant rice cooked in chicken stock, and served with chili sauce and ginger paste.</p>
+            </div>
+            <div className="dish-card">
+              <div className="dish-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1559468880-08c85f8e26e5?q=80&w=600')" }}></div>
+              <h4>🦀 Chili Crab</h4>
+              <p>Iconic Singaporean dish with succulent mud crab smothered in a sweet, savory, and slightly spicy tomato-based sauce. Perfect with fried mantou buns!</p>
+            </div>
+            <div className="dish-card">
+              <div className="dish-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1637806930600-37fa8892069d?q=80&w=600')" }}></div>
+              <h4>🍜 Laksa</h4>
+              <p>Rich and spicy coconut curry noodle soup loaded with prawns, fish cakes, and tau pok. A perfect blend of Malay and Chinese flavors.</p>
+            </div>
+            <div className="dish-card">
+              <div className="dish-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?q=80&w=600')" }}></div>
+              <h4>🍢 Satay</h4>
+              <p>Grilled skewered meat (chicken, beef, or mutton) marinated in turmeric and spices, served with peanut sauce, cucumber, and onions.</p>
+            </div>
+            <div className="dish-card">
+              <div className="dish-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1525351326368-efbb5cb6814d?q=80&w=600')" }}></div>
+              <h4>☕ Kaya Toast</h4>
+              <p>Traditional breakfast of crispy toast with sweet coconut egg jam (kaya) and butter, served with soft-boiled eggs and strong local coffee (kopi).</p>
+            </div>
+            <div className="dish-card">
+              <div className="dish-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1569718212165-3a8278d5f624?q=80&w=600')" }}></div>
+              <h4>🍝 Hokkien Mee</h4>
+              <p>Stir-fried yellow noodles and rice vermicelli in a rich prawn and pork stock, topped with prawns, squid, pork belly, and sambal chili.</p>
+            </div>
           </div>
         </div>
       </div>
