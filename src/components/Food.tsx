@@ -7,6 +7,7 @@ interface FoodPlace {
   description: string;
   specialties: string[];
   icon: string;
+  mapsUrl: string;
 }
 
 const Food: React.FC = () => {
@@ -18,63 +19,72 @@ const Food: React.FC = () => {
       type: 'hawker',
       description: 'Legendary hawker center home to Tian Tian Hainanese Chicken Rice',
       specialties: ['Hainanese Chicken Rice', 'Char Kway Teow', 'Congee'],
-      icon: '🍜'
+      icon: '🍜',
+      mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Maxwell+Food+Centre+Singapore'
     },
     {
       name: 'Lau Pa Sat',
       type: 'hawker',
       description: 'Historic hawker center with Victorian architecture and satay street',
       specialties: ['Satay', 'Laksa', 'Oyster Omelette'],
-      icon: '🍢'
+      icon: '🍢',
+      mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Lau+Pa+Sat+Singapore'
     },
     {
       name: 'Tekka Centre',
       type: 'hawker',
       description: 'Little India\'s vibrant hawker center with authentic Indian cuisine',
       specialties: ['Biryani', 'Roti Prata', 'Fish Head Curry'],
-      icon: '🍛'
+      icon: '🍛',
+      mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Tekka+Centre+Singapore'
     },
     {
       name: 'Odette',
       type: 'fine',
       description: '3 Michelin stars - Contemporary French cuisine at National Gallery',
       specialties: ['Tasting Menu', 'French Fine Dining', 'Wine Pairing'],
-      icon: '⭐'
+      icon: '⭐',
+      mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Odette+Restaurant+Singapore'
     },
     {
       name: 'Burnt Ends',
       type: 'fine',
       description: 'Modern Australian barbecue with open kitchen concept',
       specialties: ['Wood-fired Dishes', 'BBQ', 'Craft Cocktails'],
-      icon: '🔥'
+      icon: '🔥',
+      mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Burnt+Ends+Singapore'
     },
     {
       name: 'Candlenut',
       type: 'fine',
       description: 'World\'s first Michelin-starred Peranakan restaurant',
       specialties: ['Peranakan Cuisine', 'Buah Keluak', 'Modern Nonya'],
-      icon: '🌟'
+      icon: '🌟',
+      mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Candlenut+Restaurant+Singapore'
     },
     {
       name: 'Ya Kun Kaya Toast',
       type: 'local',
       description: 'Iconic breakfast spot since 1944, perfect morning tradition',
       specialties: ['Kaya Toast', 'Soft-boiled Eggs', 'Kopi'],
-      icon: '☕'
+      icon: '☕',
+      mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Ya+Kun+Kaya+Toast+Singapore'
     },
     {
       name: 'Jumbo Seafood',
       type: 'local',
       description: 'Famous for Singapore chili crab and fresh seafood',
       specialties: ['Chili Crab', 'Black Pepper Crab', 'Cereal Prawns'],
-      icon: '🦀'
+      icon: '🦀',
+      mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Jumbo+Seafood+Singapore'
     },
     {
       name: 'Newton Food Centre',
       type: 'local',
       description: 'Open-air hawker center, great for late-night eats post-F1',
       specialties: ['BBQ Stingray', 'Hokkien Mee', 'Carrot Cake'],
-      icon: '🌙'
+      icon: '🌙',
+      mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Newton+Food+Centre+Singapore'
     }
   ];
 
@@ -121,7 +131,12 @@ const Food: React.FC = () => {
                   <span key={idx} className="specialty-tag">{specialty}</span>
                 ))}
               </div>
-              <button className="food-btn">Get Directions</button>
+              <button
+                className="food-btn"
+                onClick={() => window.open(place.mapsUrl, '_blank')}
+              >
+                Get Directions
+              </button>
             </div>
           ))}
         </div>
