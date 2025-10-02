@@ -142,7 +142,7 @@ const TravelTips: React.FC = () => {
             </button>
             <button
               className="app-tag"
-              onClick={() => window.open('https://www.formula1.com/en/latest/article.the-official-f1-app-your-mobile-guide-to-f1.5VASRjQW9yO0se8CAkieO2.html', '_blank')}
+              onClick={() => window.open('https://apps.apple.com/app/formula-1/id835022598', '_blank')}
             >
               F1 Official App
             </button>
