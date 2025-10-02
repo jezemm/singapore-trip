@@ -40,14 +40,14 @@ const Itinerary: React.FC = () => {
         },
         {
           time: 'Evening',
-          title: 'Hawker Center Dinner',
-          description: 'Relaxed dinner at Maxwell Food Centre or Lau Pa Sat',
-          icon: '🍜'
+          title: 'Dinner with Georgie & Sacha',
+          description: '7pm dinner at Ngee Ann City with Georgie and Sacha',
+          icon: '🍽️'
         },
         {
           time: 'Night',
-          title: 'Rest & Recover',
-          description: 'Early night to adjust to timezone',
+          title: 'Return to Hotel',
+          description: 'Head back to hotel after dinner and rest',
           icon: '😴'
         }
       ]
@@ -168,9 +168,9 @@ const Itinerary: React.FC = () => {
         },
         {
           time: 'Evening',
-          title: 'Fine Dining Experience',
-          description: 'Celebrate at Odette or Burnt Ends - Michelin-starred dining',
-          icon: '⭐'
+          title: 'Dinner with Raj',
+          description: 'Dinner at New Ubin Seafood with Raj',
+          icon: '🦞'
         },
         {
           time: 'Night',
