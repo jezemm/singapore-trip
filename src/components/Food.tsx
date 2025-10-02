@@ -150,7 +150,7 @@ const Food: React.FC = () => {
               <p>Singapore's national dish featuring tender poached chicken, fragrant rice cooked in chicken stock, and served with chili sauce and ginger paste.</p>
             </div>
             <div className="dish-card">
-              <div className="dish-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1559468880-08c85f8e26e5?q=80&w=600')" }}></div>
+              <div className="dish-image" style={{ backgroundImage: "url('https://www.seriouseats.com/thmb/i0oXTPxJ-fF1ifXOa5Fqw9dy_Nw=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2013__02__20130224-242112-singapore-chili-crab-edit-e02be72e16974f5da6fef41ec4ca7ea4.jpg')" }}></div>
               <h4>🦀 Chili Crab</h4>
               <p>Iconic Singaporean dish with succulent mud crab smothered in a sweet, savory, and slightly spicy tomato-based sauce. Perfect with fried mantou buns!</p>
             </div>
