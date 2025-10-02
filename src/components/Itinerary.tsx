@@ -40,8 +40,8 @@ const Itinerary: React.FC = () => {
         },
         {
           time: 'Evening',
-          title: 'Dinner with Georgie & Sacha',
-          description: '7pm dinner at Ngee Ann City with Georgie and Sacha',
+          title: 'Dinner with Georgie & Satya',
+          description: '7pm dinner at Ngee Ann City with Georgie and Satya',
           icon: '🍽️'
         },
         {
