@@ -187,28 +187,28 @@ const Itinerary: React.FC = () => {
       highlight: '✈️',
       activities: [
         {
-          time: 'Morning',
-          title: 'Last-Minute Shopping',
-          description: 'Chinatown or Little India for souvenirs and memories',
-          icon: '🛍️'
+          time: 'Early Morning',
+          title: 'Check-out & Breakfast',
+          description: 'Pack up and quick breakfast at hotel',
+          icon: '☕'
         },
         {
-          time: 'Midday',
-          title: 'Final Singaporean Meal',
-          description: 'One last iconic lunch - maybe that chili crab!',
-          icon: '🦀'
+          time: 'Mid Morning',
+          title: 'Head to Changi Airport',
+          description: 'Depart for airport - allow 2 hours before flight',
+          icon: '🚕'
+        },
+        {
+          time: '11:10 AM',
+          title: 'Flight Departure',
+          description: 'Take off from Singapore - homeward bound with amazing memories!',
+          icon: '🛫'
         },
         {
           time: 'Afternoon',
-          title: 'Check-out & Airport',
-          description: 'Head to Changi Airport with amazing memories',
-          icon: '🧳'
-        },
-        {
-          time: 'Evening',
-          title: 'Homeward Bound',
-          description: 'Departure with unforgettable father-son memories',
-          icon: '🛫'
+          title: 'Journey Home',
+          description: 'Flight back to Australia with unforgettable father-son memories',
+          icon: '✈️'
         }
       ]
     }
