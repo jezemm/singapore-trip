@@ -145,7 +145,7 @@ const Food: React.FC = () => {
           <h3>Must-Try Dishes</h3>
           <div className="dishes-grid">
             <div className="dish-card">
-              <div className="dish-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=600')" }}></div>
+              <div className="dish-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1598103442097-8b74394b95c6?q=80&w=600')" }}></div>
               <h4>🍗 Hainanese Chicken Rice</h4>
               <p>Singapore's national dish featuring tender poached chicken, fragrant rice cooked in chicken stock, and served with chili sauce and ginger paste.</p>
             </div>
