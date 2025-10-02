@@ -160,7 +160,7 @@ const Food: React.FC = () => {
               <p>Rich and spicy coconut curry noodle soup loaded with prawns, fish cakes, and tau pok. A perfect blend of Malay and Chinese flavors.</p>
             </div>
             <div className="dish-card">
-              <div className="dish-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?q=80&w=600')" }}></div>
+              <div className="dish-image" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1529563021893-cc83c992d75d?q=80&w=600')" }}></div>
               <h4>🍢 Satay</h4>
               <p>Grilled skewered meat (chicken, beef, or mutton) marinated in turmeric and spices, served with peanut sauce, cucumber, and onions.</p>
             </div>
